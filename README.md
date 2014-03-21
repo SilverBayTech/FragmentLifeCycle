@@ -1,4 +1,4 @@
 FragmentLifeCycle
 =================
 
-Code for the Android Fragment LifeCycle In Detail blog post
+Source code associated with blog post for Android Fragment Lifecycle In Detail
