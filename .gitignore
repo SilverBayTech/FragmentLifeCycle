@@ -1,0 +1,12 @@
+# built application files
+*.apk
+*.ap_
+
+# Built stuff
+
+/bin
+/gen
+
+# Other random stuff
+.DS_Store
+*.swp

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/host_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/upperContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/upper_background"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/add_button" />
+
+        <Button
+            android:id="@+id/pushButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/push_button" />
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/remove_button"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/popButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/pop_button"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/middle_background"
+        android:orientation="vertical" >
+
+        <fragment
+            android:id="@+id/hostedFragment"
+            android:name="com.silverbaytech.blog.fragmentlifecycle.HostedFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </fragment>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lowerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lower_background"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

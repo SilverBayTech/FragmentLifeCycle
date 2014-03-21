@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="boot_background">#FFFFFF</color>
+    <color name="host_background">#FF0000</color>
+    <color name="upper_background">#FFFFFF</color>
+    <color name="middle_background">#808080</color>
+    <color name="lower_background">#000000</color>
+    <color name="hosted_background">#000080</color>
+    <color name="added_background">#FFFF00</color>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fragment Lifecycle</string>
+    <string name="app_short_name">Frag Life</string>
+    <string name="start_button">Start</string>
+    <string name="add_button">Add Fragment</string>
+    <string name="pop_button">Pop Fragment</string>
+    <string name="push_button">Push Fragment</string>
+    <string name="remove_button">Remove Fragment</string>
+    <string name="hosted_fragment">Hosted Fragment</string>
+    <string name="added_fragment">Added Fragment</string>
+
+</resources>
