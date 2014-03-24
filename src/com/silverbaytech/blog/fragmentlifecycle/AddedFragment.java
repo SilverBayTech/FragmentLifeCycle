@@ -56,6 +56,15 @@ public class AddedFragment extends Fragment
 	{
 		Log.i(TAG, "onActivityCreated enter");
 		super.onActivityCreated(savedInstanceState);
+		if (savedInstanceState != null)
+		{
+			String tag = savedInstanceState.getString("tag");
+			Log.i(TAG, "savedInstanceState.tag=" + (tag == null?"null":tag));
+		}
+		else
+		{
+			Log.i(TAG, "savedInstanceState is null");
+		}
 		Log.i(TAG, "onActivityCreated exit");
 	}
 
@@ -116,10 +125,19 @@ public class AddedFragment extends Fragment
 	}
 
 	@Override
+	public void onViewStateRestored(Bundle savedInstanceState)
+	{
+		Log.i(TAG, "onViewStateRestored enter");
+		super.onViewStateRestored(savedInstanceState);
+		Log.i(TAG, "onViewStateRestored exit");
+	}
+
+	@Override
 	public void onSaveInstanceState(Bundle outState)
 	{
 		Log.i(TAG, "onSaveInstanceState enter");
 		super.onSaveInstanceState(outState);
+		outState.putString("tag", TAG);
 		Log.i(TAG, "onSaveInstanceState exit");
 	}
 
